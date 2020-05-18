@@ -1,0 +1,1322 @@
+/* margin 0 - убирает все внешние отступы во всем body 
+   font-weight: 200\400 указать толщину текста */
+
+body{
+	margin:0 ;
+	font-family: 'Kanit', sans-serif;
+}
+
+
+/* header - шапка страницы. width 100% для полного отображения, устанавливается автоматически, но можно указать
+   height 'X'px - протяженность шапки в низ УКАЗЫВАЕТСЯ ВСЕГДА ( может быть изменена) */
+
+.header{
+	width: 100%;
+	height: 5000px;
+	background-color: #343434;
+}
+
+
+
+/* Для логотипа */
+
+.logo-text{
+	line-height: 100%;
+	font-size: 48px;
+	color: #ebebeb;
+	margin-left: 4px;
+}
+
+.logo-png{
+	height: 100px;
+	width: 100px;
+	margin-left: 3px;
+	border-radius: 5px
+}
+
+
+/* 	background-color:#777 - используется для наглядного примера блочной структуры */
+
+.container1{
+	width: 100%;
+	background-color:#202020;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: auto;
+}
+
+.div-for-text-logo{
+	width: 150px;
+	height: 100px;
+	/*background-color: red;*/
+}
+
+.rectangle-for-logo-text-and-png{
+	width: 3px;
+	height: 85px;
+	background-color: #ebebeb;
+	margin-left: 10px;
+}
+
+/* Тестовый flex box */
+/* flex-direction:row - ряд, flex-direction:columns - колонка  */
+/* justify-content - https://webref.ru/css/justify-content */
+/* align-items - https://webref.ru/css/align-items */
+
+.flex-box-logo{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.div-for-donat-button{
+	width: 150px;
+	height: 50px;
+	margin: 0px;
+	padding: auto;
+	background: linear-gradient(45deg, #62d36a, #49c352);
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+
+.div-for-donat-button{
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	border-radius: 2px;
+	text-decoration: none;
+	color: #000 !important;
+}
+
+.div-for-donat-button:hover{
+	text-align: center;
+	border-top: 2px solid #39b242;
+	border-bottom: 0px solid #39b242;
+	border-radius: 2px
+}
+
+/* Подвал */
+
+
+.footer{
+	width: 100%;
+	height: 53px;
+	background-color: #1f1f1f;
+	color: #ebebeb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Фишка для удаления отступа между header и footer ( Создается невидимый блок и удаляется ) */
+
+.footer::before{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.footer a{
+	color: #ffae39;
+	text-decoration: none;
+}
+
+
+/* CSS Нового файла changenumberDEFSTICK */
+
+.container2{
+	width: 500px;
+	height: 110px;
+	background-color: #202020;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 7px;
+	margin-top: 40px;
+}
+
+.flex-box-for-change-number-stick{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: center;
+}
+
+.rectangle-for-cns-1{
+	height: 80px;
+	width: 80px;
+	background-color: #ebebeb;
+	border-radius: 7px;
+
+}
+
+.rectangle-for-cns-2{
+	height: 80px;
+	width: 80px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.rectangle-for-cns-3{
+	height: 80px;
+	width: 80px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.rectangle-for-cns-4{
+	height: 80px;
+	width: 80px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+/* Числа в change */
+
+.n1{
+	color: #101010;
+	font-size: 50px;
+}
+
+.n2{
+	color: #ebebeb;
+	font-size: 50px;
+}
+
+.n3{
+	color: #ebebeb;
+	font-size: 50px;
+	
+}
+
+.n4{
+	color: #ebebeb;
+	font-size: 50px;
+	
+}
+
+
+/* Ссылка на 1 стрик стиков */
+
+.container2 a{
+	color: #ffae39;
+	text-decoration: none;
+}
+
+
+/* Настройка css Для 1 Стрика */
+
+
+
+
+/* flex box для стикеров 1 ряда*/
+
+
+.container3{
+	width: 1800px;
+	height: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 130px;
+}
+
+
+.flex-box-for-1-streak-stick{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box-for-stick-1{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-2{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-3{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-4{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.Howling-Dawn{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Crown-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Flammable-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Swag-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+
+.contraband{
+	width: 300px;
+	height: 19px;
+	background-color: #ffae39;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contraband-text{
+	color: #101010;
+	font-size: 12px;
+	text-align: center;
+	
+}
+
+.exotic{
+	width: 300px;
+	height: 19px;
+	background-color: #d32ee6;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.exotic-text{
+	color: #101010;
+	font-size: 12px;
+	text-align: center;
+}
+
+.pic-Howling-Dawn{
+	margin-left: 45px;
+}
+
+.pic-Crown-Foil{
+	margin-left: 40px;
+}
+
+.pic-Flammable-Foil{
+	margin-left: 45px;
+}
+
+.pic-Swag-Foil{
+	margin-left: 45px;
+}
+
+.price-Howling-Dawn{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Howling-Dawn{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Crown-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Crown-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Flammable-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Flammable-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Swag-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.number-Swag-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.search-Howling-Dawn{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Howling-Dawn{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Crown-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Crown-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Flammable-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Flammable-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Swag-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Swag-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+
+/* Для поиска */
+
+
+
+.uplink{
+	text-decoration: none;
+}
+
+
+.uplink:hover{
+	text-decoration: underline;
+	color: #FFF !important;
+}
+
+.downlink{
+	text-decoration: none;
+}
+
+.downlink:hover{
+	text-decoration: underline;
+	color: #000 !important;
+}
+
+/* Второй ряд */
+
+.container4{
+	width: 1800px;
+	height: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 130px;
+}
+
+
+.flex-box-for-1-streak-stick{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box-for-stick-5{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-6{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-7{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-8{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.Headhunter-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.New-Sheriff-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Dragon-Lore-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Global-Elite-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+
+.contraband{
+	width: 300px;
+	height: 19px;
+	background-color: #ffae39;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contraband-text{
+	color: #101010;
+	font-size: 12px;
+	text-align: center;
+	
+}
+
+.exotic{
+	width: 300px;
+	height: 19px;
+	background-color: #d32ee6;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.exotic-text{
+	color: #101010;
+	font-size: 12px;
+	text-align: center;
+}
+
+.pic-Headhunter-Foil{
+	margin-left: 45px;
+}
+
+.pic-New-Sheriff-Foil{
+	margin-left: 47px;
+}
+
+.pic-Dragon-Lore-Foil{
+	margin-left: 45px;
+}
+
+.pic-Global-Elite-Foil{
+	margin-left: 45px;
+}
+
+.price-Headhunter-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Headhunter-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-New-Sheriff-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-New-Sheriff-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Dragon-Lore-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Dragon-Lore-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Global-Elite-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.number-Global-Elite-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.search-Headhunter-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Headhunter-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-New-Sheriff-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-New-Sheriff-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Dragon-Lore-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Dragon-Lore-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Global-Elite-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Global-Elite-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+
+
+/* Третий ряд */
+
+.container5{
+	width: 1800px;
+	height: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 130px;
+}
+
+
+.flex-box-for-1-streak-stick{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box-for-stick-9{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-10{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-11{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-12{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.Lucky-13-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Phoenix-Reborn-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Countdown-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Luck-Skill-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+
+.contraband{
+	width: 300px;
+	height: 19px;
+	background-color: #ffae39;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contraband-text{
+	color: #101010;
+	font-size: 12px;
+	text-align: center;
+	
+}
+
+.exotic{
+	width: 300px;
+	height: 19px;
+	background-color: #d32ee6;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.exotic-text{
+	color: #101010;
+	font-size: 12px;
+	text-align: center;
+}
+
+.pic-Lucky-13-Foil{
+	margin-left: 45px;
+}
+
+.pic-Phoenix-Reborn-Foil{
+	margin-left: 47px;
+}
+
+.pic-Countdown-Foil{
+	margin-left: 53px;
+}
+
+.pic-Luck-Skill-Foil{
+	margin-left: 45px;
+}
+
+.price-Lucky-13-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Lucky-13-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Phoenix-Reborn-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Phoenix-Reborn-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Countdown-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Countdown-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Luck-Skill-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.number-Luck-Skill-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.search-Lucky-13-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Lucky-13-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Phoenix-Reborn-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-Phoenix-Reborn-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Countdown-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Countdown-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Luck-Skill-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Luck-Skill-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+/* Четвертый  ряд */
+
+.container6{
+	width: 1800px;
+	height: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 130px;
+}
+
+
+.flex-box-for-1-streak-stick{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box-for-stick-13{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-14{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-15{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.box-for-stick-16{
+	height: 510px;
+	width: 350px;
+	background-color: #101010;
+	border-radius: 7px;
+}
+
+.Stupid-Banana-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.The-Pro-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Move-It-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.Longevity-Foil{
+	color: #ebebeb;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+
+.contraband{
+	width: 300px;
+	height: 19px;
+	background-color: #ffae39;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contraband-text{
+	color: #101010;
+	font-size: 12px;
+	text-align: center;
+	
+}
+
+.exotic{
+	width: 300px;
+	height: 19px;
+	background-color: #d32ee6;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.exotic-text{
+	color: #101010;
+	font-size: 12px;
+	text-align: center;
+}
+
+.pic-Stupid-Banana-Foil{
+	margin-left: 45px;
+}
+
+.pic-The-Pro-Foil{
+	margin-left: 47px;
+}
+
+.pic-Move-It-Foil{
+	margin-left: 53px;
+}
+
+.pic-Longevity-Foil{
+	margin-left: 45px;
+}
+
+.price-Stupid-Banana-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Stupid-Banana-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-The-Pro-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-The-Pro-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Move-It-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #ebebeb;
+	text-align: center;
+}
+
+.number-Move-It-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.price-Longevity-Foil{
+	width: 70px;
+	height: 25px;
+	background-color: #6c6c6c;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.number-Longevity-Foil{
+	font-size: 12;
+	color: #ebebeb;
+}
+
+.search-Stupid-Banana-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Stupid-Banana-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-The-Pro-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-The-Pro-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Move-It-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Move-It-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+.search-Longevity-Foil{
+	width: 150px;
+	height: 50px;
+	background-color: #5dd065;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	margin-top: 20px;
+}
+
+
+.text-search-Longevity-Foil{
+	padding-top: 5px;
+	font-size: 25px;
+	color: #101010;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
