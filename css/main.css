@@ -1,0 +1,256 @@
+
+
+
+/* margin 0 - убирает все внешние отступы во всем body 
+   font-weight: 200\400 указать толщину текста */
+
+body{
+	margin:0 ;
+	font-family: 'Kanit', sans-serif;
+}
+
+
+/* header - шапка страницы. width 100% для полного отображения, устанавливается автоматически, но можно указать
+   height 'X'px - протяженность шапки в низ УКАЗЫВАЕТСЯ ВСЕГДА ( может быть изменена) */
+
+.header{
+	width: 100%;
+	height: 915px;
+	background-color: #343434;
+}
+
+
+
+/* Для логотипа */
+
+.logo-text{
+	line-height: 100%;
+	font-size: 48px;
+	color: #ebebeb;
+	margin-left: 4px;
+}
+
+.logo-png{
+	height: 100px;
+	width: 100px;
+	margin-left: 3px;
+	border-radius: 5px
+}
+
+
+/* 	background-color:#777 - используется для наглядного примера блочной структуры */
+
+.container1{
+	width: 100%;
+	background-color:#202020;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: auto;
+}
+
+.div-for-text-logo{
+	width: 150px;
+	height: 100px;
+	/*background-color: red;*/
+}
+
+.rectangle-for-logo-text-and-png{
+	width: 3px;
+	height: 85px;
+	background-color: #ebebeb;
+	margin-left: 10px;
+}
+
+/* Тестовый flex box */
+/* flex-direction:row - ряд, flex-direction:columns - колонка  */
+/* justify-content - https://webref.ru/css/justify-content */
+/* align-items - https://webref.ru/css/align-items */
+
+.flex-box-logo{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.div-for-donat-button{
+	width: 150px;
+	height: 50px;
+	margin: 0px;
+	padding: auto;
+	background: linear-gradient(45deg, #62d36a, #49c352);
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+
+.div-for-donat-button{
+	text-align: center;
+	border-bottom: 3px solid #39b242;
+	border-radius: 2px;
+	text-decoration: none;
+	color: #000 !important;
+}
+
+.div-for-donat-button:hover{
+	text-align: center;
+	border-top: 2px solid #39b242;
+	border-bottom: 0px solid #39b242;
+	border-radius: 2px
+}
+
+
+/* container2 для двух капсул */
+
+.container2{
+	width: 1350px;
+	margin-bottom: auto;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flex-box-for-2box-caps{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.def-caps{
+	width: 450px;
+	height: 350px;
+	background-color:#202020;
+	border-radius: 7px;
+	text-align: center;
+}
+
+/*  свечение def стикеров*/
+
+.def-caps:hover{
+	-webkit-box-shadow: 0px 0px 24px 3px rgba(135, 7, 225, 0.7);
+	-moz-box-shadow: 0px 0px 24px 3px rgba(135, 7, 225, 0.7);
+	box-shadow: 0px 0px 24px 3px rgba(135, 7, 225, 0.7);
+	transition: 0.5s;
+}
+
+.def-caps:not(:hover){
+	transition: 0.5s;
+}
+
+/* конец свечение def стикеров */
+
+.def-caps-png{
+	width: 350px;
+	height: 350px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.tour-caps{
+	width: 450px;
+	height: 350px;
+	background-color:#202020;
+	border-radius: 7px;
+	text-align: center;
+}
+
+/*  свечение tour стикеров */
+
+.tour-caps:hover{
+	-webkit-box-shadow: 0px 0px 24px 3px rgba(135, 7, 225, 0.7);
+	-moz-box-shadow: 0px 0px 24px 3px rgba(135, 7, 225, 0.7);
+	box-shadow: 0px 0px 24px 3px rgba(135, 7, 225, 0.7);
+	transition: 0.5s;
+}
+
+.tour-caps:not(:hover){
+	transition: 0.5s;
+}
+
+/* конец свечение tour стикеров */
+
+.tour-caps-png{
+	width: 350px;
+	height: 350px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+/* container3 для текста под блоками стикеров */
+
+
+.container3{
+	width: 1350px;
+	margin-bottom: auto;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flex-box-for-text-2box-caps{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.text-for-def-caps{
+	font-size: 43px;
+	color: #ebebeb;
+	padding-left: 65px;
+}
+
+
+
+.text-for-tour-caps{
+	font-size: 43px;
+	color: #ebebeb;
+	padding-right: 26px;
+}
+
+.set-a-Regular-Stickers{
+	text-decoration: none;
+	color: #000 !important;
+}
+
+.set-a-Tournament-Stickers{
+	text-decoration: none;
+	color: #000 !important;
+}
+
+/* Подвал */
+
+
+.footer{
+	width: 100%;
+	height: 53px;
+	background-color: #1f1f1f;
+	color: #ebebeb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Фишка для удаления отступа между header и footer ( Создается невидимый блок и удаляется ) */
+
+.footer::before{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.footer a{
+	color: #ffae39;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
